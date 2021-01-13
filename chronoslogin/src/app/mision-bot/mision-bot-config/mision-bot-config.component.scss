@@ -1,0 +1,33 @@
+.contents {
+  display: table-cell;
+  width: 25%;
+}
+.table {
+  margin-top: 15px;
+  display: table;
+  width: 100%;
+}
+
+
+:host ::ng-deep {
+  .iconSize {
+    font-size: 20px !important;
+  }
+}
+
+.buttoninf {
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.buttonList {
+  margin-bottom: 2%;
+  margin-top: 2%;
+  width: 35%;
+  display: list-item;
+  margin-left: 33%;
+}
+.columms {
+  display: table-row;
+  width: 100%;
+}

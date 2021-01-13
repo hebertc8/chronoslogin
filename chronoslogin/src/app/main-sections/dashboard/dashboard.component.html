@@ -1,0 +1,25 @@
+<ng-container [ngSwitch]="showTabs">
+<app-tab-dasboard *ngSwitchCase="true" [infoCentral]="infoCentral" (searchConfig)="openSearchConfig($event)"></app-tab-dasboard>
+</ng-container>
+<nb-card class="card" [nbSpinner]="loadingDashboard" nbSpinnerStatus="primary" nbSpinnerSize="giant">
+  <!-- <nb-badge text="ꓝ" status="primary" position="top right" class="badgeFollowUp" ></nb-badge> -->
+  <em class="fab fa-font-awesome-flag badgeFollowUp" (click)="openFollowUp()" *ngIf="showButtonFollow"></em>
+    <nb-card-body>
+
+        <gridster [options]="options" class="gridster">
+            <gridster-item [item]="item" *ngFor="let item of dashboard; let i = index" class="gridsterItem">
+              <app-component-factory [nameComponent]="item.component" [index]="i" (removeComponent)="removeItem($event)" [filter]="item.filter"></app-component-factory>
+            </gridster-item>
+          </gridster>
+
+          <!-- <ng-template #SelectComponent></ng-template> -->
+
+              <app-right-click cdkDrag cdkDragBoundary=".card"  [cdkDragFreeDragPosition]="positionRightClick" class="rightClick" (component)="createComponent($event)" [ngStyle]="{left: RightClick.left + 'px', top: RightClick.top + 'px', opacity: RightClick.opacity, display: RightClick.display}"></app-right-click>
+
+             <div cdkDrag cdkDragLockAxis="x" cdkDragBoundary=".card" class="search{{searchConfigShow.status}}" [cdkDragFreeDragPosition]="positionSearch" [ngStyle]="{display: searchConfigShow.display, transition:  'opacity .4s' + searchConfigShow.animation}" [ngSwitch]="selectSearchConfig">
+              <nb-badge text="X" status="basic" position="top right" class="badgeClose" (click)="closeSearchConfig()"></nb-badge>
+              <app-search-agent *ngSwitchCase="'search'" ></app-search-agent>
+              <app-config *ngSwitchCase="'config'" (config)="setConfig($event)"></app-config>
+            </div>
+    </nb-card-body>
+  </nb-card>

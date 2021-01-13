@@ -1,0 +1,13 @@
+<nb-card class="card">
+  <nb-card-body class="bodyCard">
+    <div class="progress-info" *ngFor="let item of KpiData">
+      <div class="subtitle">{{ item.name }}
+        {{item.filterName}}</div>
+      <div class="h3">{{ item.value }}</div>
+      <nb-progress-bar [value]="item.valueBar !== undefined ? item.valueBar : item.value" [status]="item.semaforizacion"></nb-progress-bar>
+      <div class="caption description">
+        <bdi>{{ 'Forecast: ' + item.fc }}</bdi>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

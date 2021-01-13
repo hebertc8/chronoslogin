@@ -1,0 +1,15 @@
+<nb-card>
+    <nb-card-header>
+Complete follow-up?
+    </nb-card-header>
+<nb-card-body>
+    <h6>{{name + ' | ' + status}}</h6>
+    Obs:
+    <textarea nbInput [(ngModel)]="obs"></textarea>
+</nb-card-body>
+<nb-card-footer>
+    <div class="d-flex justify-content-around">
+        <button class="button" nbButton status="primary" (click)="close(obs)">Complete!</button><button class="button" status="basic" nbButton (click)="close(false)">Cancel</button>
+    </div>
+</nb-card-footer>
+</nb-card>

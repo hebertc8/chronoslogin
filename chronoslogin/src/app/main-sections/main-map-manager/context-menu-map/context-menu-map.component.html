@@ -1,0 +1,24 @@
+<div
+  class="contextMenuState bg-white"
+  [ngStyle]="{ 'left.px': x, 'top.px': y }"
+  (contextmenu)="none()"
+>
+  <div *ngIf="group">
+    <div class="listBox">
+      <button nbButton status="primary" (click)="addOne()">add one</button>
+      <button nbButton status="primary"  (click)="activeGroup()">add group</button>
+    </div>
+  </div>
+  <div *ngIf="!group">
+    <div class="listBox">
+      <div>
+        <input nbInput [(ngModel)]="xMatrix" class="inputGroup" type="number" autofocus/>
+        <nb-icon class="icon-default iconSize" icon="times" pack="fa"></nb-icon>
+        <input nbInput [(ngModel)]="yMatrix" class="inputGroup" type="number" />
+      </div>
+      <button nbButton status="success" (click)="addGroup()">
+        add
+      </button>
+    </div>
+  </div>
+</div>

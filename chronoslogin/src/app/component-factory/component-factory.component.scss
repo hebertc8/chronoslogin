@@ -1,0 +1,62 @@
+@import "./../common.scss";
+
+$size: 0.8rem;
+
+.card {
+    @extend .cardCommon;
+   // background-color: white;
+}
+
+.headerFactory {
+    padding: 0px 0.5rem;
+    font-size: $size;
+}
+
+.iconDelete {
+    font-size: $size;
+    align-self: center;
+    cursor: pointer;
+}
+
+.flipCard {
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+
+.bodyFront {
+    padding: unset;
+}
+
+::ng-deep .flipCard .flipcard-body {
+    width: 100%;
+}
+
+.flipButton {
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    // margin-top: 5px;
+    cursor: pointer;
+}
+
+// ::ng-deep .flipCard .flipcard-body .front-container .flip-button,
+// ::ng-deep .flipCard .flipcard-body .back-container .flip-button {
+//     cursor: pointer;
+//     bottom: unset;
+//     opacity: 1;
+//     transition: opacity 0s 0.15s;
+//     position: fixed !important;
+//     margin: 0;
+//     padding: 5px;
+//     top: 0;
+//     right: 0;
+// }
+
+::ng-deep .flipCard .flipcard-body .front-container,
+::ng-deep .flipCard .flipcard-body .back-container {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+}

@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 255.12 85.04"
+   version="1.1"
+   sodipodi:docname="KuehneNagel.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata35">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Artboard 3 copy 40</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview33"
+     showgrid="false"
+     inkscape:zoom="2.56"
+     inkscape:cx="99.340552"
+     inkscape:cy="-1.3178921"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g552" />
+  <defs
+     id="defs12">
+    <style
+       id="style10">.cls-1{fill:#2b5097;fill-rule:evenodd;}</style>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3453">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3455"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3457">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3459"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3461">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3463"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3465">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3467"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3469">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3471"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3473">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3475"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3477">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3479"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       id="SVGID_6_-3">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use33-6"
+         overflow="visible"
+         xlink:href="#SVGID_5_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3483">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3485"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2-4">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7-4"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3626">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3628"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3630">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3632"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3634">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3636"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3638">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3640"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3642">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3644"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3646">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3648"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3650">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3652"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2-8">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7-7"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3790">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3792"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3794">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3796"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3798">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3800"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3802">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3804"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3806">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3808"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3810">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3812"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3814">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3816"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3818">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3820"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       id="SVGID_6_-3-4">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use33-6-5"
+         overflow="visible"
+         xlink:href="#SVGID_5_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2-8-1">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7-7-4"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       id="SVGID_6_-3-4-6">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use33-6-5-6"
+         overflow="visible"
+         xlink:href="#SVGID_5_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2-8-3">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7-7-0"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3951">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3953"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3955">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3957"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3959">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3961"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3963">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3965"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3967">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3969"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3971">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3973"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3975">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3977"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_1_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_3_" />
+    <rect
+       height="146.554"
+       width="144.311"
+       y="0.72299999"
+       x="0.47600001"
+       id="SVGID_5_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_7_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_8_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_9_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_10_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_11_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_12_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_13_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_14_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_15_" />
+  </defs>
+  <title
+     id="title14">Artboard 3 copy 40</title>
+  <style
+     id="style401"
+     type="text/css">
+	.st0{stroke:#000000;stroke-width:0.7024;stroke-miterlimit:10;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_3_);}
+</style>
+  <g
+     id="g524"
+     transform="matrix(0.32763442,0,0,0.33108194,-3.3589898,-13.966892)">
+    <g
+       id="Layer_1-7"
+       transform="translate(-393.44538,-42.47438)">
+      <g
+         id="g431" />
+      <g
+         id="g552"
+         transform="matrix(0.05273316,0,0,-0.04962425,-210.08793,424.49667)"
+         style="fill:#000080;stroke:none">
+        <path
+           id="path526"
+           d="m 23752.631,5046.4601 c -51.303,-7.7001 -108.835,-29.0895 -157.574,-57.751 -41.777,-24.8114 -76.223,-55.1841 -111.768,-97.9627 -80.618,-97.1072 -117.631,-206.1923 -128.99,-379.0175 -6.597,-100.5293 2.564,-199.7756 26.384,-286.1879 10.993,-39.7841 44.707,-117.6409 63.762,-147.5859 101.14,-158.2805 265.31,-230.576 457.332,-201.0589 105.172,16.2558 230.498,70.1567 296.093,127.4799 l 25.287,21.8171 v 249.3985 249.3986 h -197.887 -197.883 v -106.9462 -106.9462 h 78.787 78.788 l -0.733,-82.1348 -1.101,-82.5625 -21.619,-9.839 c -56.801,-26.5227 -129.359,-37.2173 -175.531,-26.5227 -92.346,21.8171 -156.474,111.652 -176.63,248.5431 -11.725,78.7124 -5.131,217.3147 14.291,291.3216 19.789,77.0011 81.354,143.7356 148.415,161.7026 71.091,19.2504 148.411,-28.2339 178.826,-109.513 l 9.896,-27.3781 h 125.692 125.694 v 11.978 c 0,17.5391 -26.018,102.2405 -41.043,133.8966 -78.787,164.2695 -241.858,252.3931 -418.488,225.8704 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path528"
+           d="m 16296.805,4469.3783 v -551.8426 h 355.458 355.458 v 119.7799 119.7796 h -230.864 -230.866 v 109.0853 109.0851 h 194.22 194.22 v 113.363 113.363 h -194.22 -194.22 v 96.2516 96.2516 h 221.705 221.702 v 113.3629 113.363 h -346.295 -346.298 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path530"
+           d="m 14303.307,4460.8227 v -551.8426 h 126.426 126.427 v 156.1414 155.7137 l 44.707,62.4566 c 38.843,54.3288 45.072,61.1733 48.737,54.3288 2.199,-3.8502 49.47,-102.2407 104.439,-217.7426 l 100.04,-210.8979 h 149.88 c 119.463,0 149.879,1.2832 148.413,5.5611 -0.734,2.9945 -50.937,97.535 -111.035,210.4702 -190.921,358.9117 -227.934,429.0683 -231.962,438.0517 -3.666,7.7002 12.458,32.5116 149.877,227.1539 84.651,120.2076 153.909,219.0257 153.909,220.3091 0,1.2834 -64.128,2.139 -142.548,2.139 h -142.55 l -134.855,-212.1814 -135.221,-211.7534 -1.099,211.7534 -0.732,212.1814 h -126.427 -126.426 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path532"
+           d="m 15248.019,4633.22 c -1.1,-283.1937 -0.364,-387.5732 2.932,-410.6735 30.782,-215.1759 209.977,-358.9117 432.046,-346.5058 137.786,7.7 253.586,71.8679 323.578,179.2419 19.422,30.3725 44.341,85.9846 51.669,116.7852 14.659,60.7454 15.025,68.0178 15.025,461.1522 v 379.4451 h -124.228 -124.591 l -1.466,-364.4726 c -1.468,-390.9955 -1.1,-385.8621 -20.156,-431.635 -24.919,-59.4623 -69.625,-86.4126 -143.649,-86.4126 -88.314,0.4277 -135.588,39.3562 -155.377,128.3355 -5.129,22.6726 -5.862,73.5789 -5.862,390.1397 v 364.045 h -124.226 -124.229 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path534"
+           d="m 17194.611,4460.8227 v -551.8426 h 124.595 124.593 v 228.8649 228.8649 h 159.406 159.407 V 4137.845 3908.9801 h 124.592 124.595 v 551.8426 551.8424 h -124.595 -124.592 v -203.1979 -203.1977 h -159.407 -159.406 v 203.1977 203.1979 h -124.593 -124.595 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path536"
+           d="m 18279.307,4460.8227 v -551.8426 h 117.267 117.265 l 0.732,338.3778 1.098,338.8056 63.396,-132.1854 c 34.814,-72.7235 107.37,-224.5872 161.606,-337.5224 l 98.208,-205.3368 127.16,-1.2832 126.793,-0.8556 v 551.8426 551.8424 h -115.434 -115.432 v -338.8056 -339.2334 l -40.675,83.418 c -21.987,45.7731 -96.011,198.4921 -163.805,339.2335 l -123.494,255.3875 h -127.159 -127.526 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path538"
+           d="m 19360.341,4460.8227 v -551.8426 h 357.291 357.289 v 119.7798 119.7797 h -232.695 -232.698 v 106.9463 106.9462 h 194.22 194.22 v 113.3629 113.363 h -194.22 -194.22 v 96.2516 96.2516 l 222.802,0.8556 222.437,1.2833 v 113.363 113.363 l -347.031,1.2834 -347.395,0.8556 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path540"
+           d="m 21350.173,4460.8227 v -551.8426 h 117.264 117.264 l 0.734,339.6612 1.1,339.6612 162.704,-339.6612 162.704,-339.6612 h 127.526 127.892 v 551.8426 551.8424 h -117.264 -117.264 l -0.734,-336.239 -1.099,-336.2389 -161.972,334.9557 -161.971,335.3832 -128.259,1.2834 -128.625,0.8556 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path542"
+           d="m 22467.851,4466.3838 c -103.34,-300.7328 -188.722,-549.2759 -189.456,-551.8426 -1.465,-4.2779 25.286,-5.5611 126.427,-5.5611 h 128.258 l 9.528,31.2282 c 5.13,16.6837 19.054,62.4566 31.148,101.385 l 21.254,70.5846 h 182.859 182.495 l 30.781,-101.385 31.147,-101.8128 h 136.687 c 94.545,0 137.053,1.2832 137.053,4.7055 0,2.139 -61.198,181.8086 -135.953,398.6956 -75.122,216.887 -159.773,462.8633 -188.723,546.2814 l -52.037,151.8635 -131.921,1.2834 -131.557,0.8556 z m 386.607,-1.2833 40.676,-134.7524 -115.066,-1.2833 c -63.396,-0.4277 -116.164,-0.4277 -116.897,0.4279 -0.735,1.2832 98.208,325.1164 114.698,375.1673 1.1,3.4222 9.529,-17.9669 19.056,-49.1953 9.161,-30.3727 35.18,-116.3575 57.533,-190.3642 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path544"
+           d="m 24465.014,4460.8227 v -551.8426 h 355.457 355.458 v 119.7798 119.7797 h -230.865 -230.864 v 106.9463 106.9462 h 192.387 192.387 v 113.3629 113.363 h -192.387 -192.387 v 96.2516 96.2516 h 221.703 221.704 v 115.5019 115.502 h -346.296 -346.297 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path546"
+           d="m 25395.8,4460.8227 v -551.8426 h 337.137 337.135 v 119.7798 119.7797 h -212.544 -212.541 v 432.0627 432.0628 h -124.593 -124.594 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <path
+           id="path548"
+           d="m 20784.005,4753.8552 c 0,-119.7797 0.368,-169.8306 0.733,-110.3685 0.734,59.0344 0.734,157.4249 0,218.1704 -0.365,60.7455 -0.733,12.4058 -0.733,-107.8019 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000080;stroke-width:0.39593244" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:940.00415039px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#00ffff;fill-opacity:1;stroke:none;stroke-width:23.500103"
+           x="22591.545"
+           y="-3731.6641"
+           id="text578"
+           transform="scale(0.90255501,-1.1079657)"><tspan
+             sodipodi:role="line"
+             id="tspan576"
+             x="22591.545"
+             y="-3731.6641"
+             style="fill:#00ffff;stroke-width:23.500103">+</tspan></text>
+      </g>
+    </g>
+    <g
+       id="Layer_2" />
+  </g>
+</svg>

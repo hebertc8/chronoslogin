@@ -1,0 +1,52 @@
+.upload-button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0px;
+  margin: 0px;
+}
+.upload-button > input {
+  display: none;
+}
+
+.containerSchedular {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 2% 0%;
+}
+.cotainerButtons {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.alignText {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.items {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.filename {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filename-left {
+  display: flex;
+  align-items: center;
+}
+.filename-right {
+  display: flex;
+  align-items: center;
+}

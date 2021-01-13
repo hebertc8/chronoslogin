@@ -1,0 +1,28 @@
+<div class="header">
+  <h2 style="text-align: center;">Active Configurations</h2>
+  <div class="d-flex justify-content-end">
+    <button
+    nbButton
+    nbTooltip="Activate"
+    nbTooltipPlacement="bottom"
+    nbTooltipStatus="success"
+    class="mr-1"
+    (click)="activeConfig()"
+    status="success"
+  >
+    <nb-icon style="font-size: 22px;" icon="plus" pack="fa"></nb-icon>
+  </button>
+  <button
+    nbButton
+    nbTooltip="New configurations"
+    nbTooltipPlacement="bottom"
+    nbTooltipStatus="primary"
+    status="primary"
+    [routerLink]="['/main/misionbot/configuration']"
+  >
+    <nb-icon style="font-size: 22px;" icon="cog" pack="fa"></nb-icon>
+  </button>
+  </div>
+</div>
+<ng2-smart-table [settings]="settings" [source]="source"
+(delete)="deleteAction($event)"></ng2-smart-table>

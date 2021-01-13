@@ -1,0 +1,44 @@
+.contentRel {
+  overflow: auto;
+  position: relative;
+  width: auto;
+  height: 400px;
+}
+
+.cardHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentExp {
+  width: 850px !important;
+  height: 575px;
+}
+.cells {
+  width: 100%;
+}
+
+.buttonRigth{
+  margin-left: 70%;
+}
+.nb-theme-default nb-card.size-small {
+  height: 17.1875rem !important;
+}
+
+.buttonLeft{
+  margin-left: 5%;
+}
+
+.iconCenter {
+  position: relative;
+  top: 40%;
+}
+.iconSize{
+  font-size: 1.46rem !important;
+}
+.cardTable {
+  min-width: 10rem;
+  max-width: 20rem;
+  margin: 0 auto 2rem;
+}

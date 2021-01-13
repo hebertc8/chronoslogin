@@ -1,0 +1,61 @@
+@import '../common.scss';
+
+.alerta {
+    @extend .animation;
+}
+
+.Form {
+    // display: table;
+     margin: auto;
+     max-width: 27rem !important;
+     min-width: 10rem;
+     margin-top: calc(50vh - 270px);
+ }
+ 
+ .iconShowPassword {
+     float: right;
+     cursor: pointer;
+ }
+ 
+ .logoForm {
+     max-height: 120px;
+     min-height: 80px;
+     margin: auto;
+     display: block;
+ }
+ .textForm {
+     text-align: center;
+ }
+ 
+ .register {
+     text-align: center;
+ }
+ 
+ .buttonSubmit {
+     margin: 20px 0px;
+ }
+ 
+ .login {
+         height: 100%;
+         display: flex;
+         width: 100%;
+         margin: 0;
+ }
+ 
+ .layoutColumn {
+     padding: 2.25rem 2.25rem !important;
+ }
+
+
+.withoutArrows::-webkit-outer-spin-button,
+.withoutArrows::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+:host ::ng-deep .horizontal {
+    .header {
+        display: none !important;
+    }
+}

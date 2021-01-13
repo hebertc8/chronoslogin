@@ -1,0 +1,29 @@
+<div class="map-container" #myBounds [nbSpinner]="loading" nbSpinnerStatus="primary">
+  <!-- Draggable block -->
+  <!-- <div ngDraggable [bounds]="myBounds" [inBounds]="true" [gridSize]="gridSize" [zIndex]="100"
+    [preventDefaultEvent]="true" class="drag-grid">
+    <p>Drag</p>
+  </div> -->
+  <!-- Draw grids -->
+  <!-- <div *ngFor="let x of grids"> -->
+  <nb-card class="infoAgent"
+    [ngStyle]="{'margin-left': this.marginInfoAgent.marginleft + 'px', 'margin-top': this.marginInfoAgent.margintop + 'px'}">
+    <nb-card-header>
+      <nb-badge text="X" status="primary" position="top right" class="badgeClose" (click)="closeInfo()"></nb-badge>
+      <nb-user [name]="infoAgent.name" title="{{infoAgent.status + ' | ' + infoAgent.time}}" nbContextMenuTag="menu-action">
+      </nb-user>
+    </nb-card-header>
+    <nb-card-body>
+    </nb-card-body>
+  </nb-card>
+
+
+  <div class="dragMap" ngDraggable (endOffset)="onMoveEnd($event)">
+
+    <app-position *ngFor="let item of map" [x]="item.x" [y]="item.y" (click)="showInfo()" [indexMap]="this.indexABS"></app-position>
+
+
+  </div>
+
+</div>
+<!-- </div> -->

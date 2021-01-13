@@ -1,0 +1,64 @@
+@import "../../common.scss";
+
+.map-container {
+  position: relative;
+  display: flex;
+  // flex-direction: column;
+  overflow: hidden;
+
+  height: 100%;
+  width: 100%;
+  //  display: flex;
+  border: 1px solid #bababa;
+}
+
+.drag-grid {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #f8cb00;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+}
+
+.dragMap {
+  //position: absolute;
+  display: flex;
+  //flex-direction: column;
+  border: 1px solid white;
+  touch-action: none;
+  flex-direction: column;
+  cursor: grab;
+  background-color: #EDF1F7;
+  width: 10000px;
+  height: 800px;
+}
+
+.puesto {
+  position: absolute;
+  width: 2.7rem;
+  height: 1.7rem;
+  background-color: #20c997;
+  color: white;
+  text-align: center;
+  // line-height: 50px;
+  border: 1px dashed #067002;
+  border-radius: 5px;
+  animation: appear;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+
+///////// Info agents
+.infoAgent {
+  position: absolute;
+  z-index: 9999;
+  transition: margin 0.5s;
+  margin-left: -200px;
+  margin-top: -200px;
+}
+
+.badgeClose {
+  cursor: pointer;
+}

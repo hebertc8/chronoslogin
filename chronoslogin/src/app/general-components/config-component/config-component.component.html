@@ -1,0 +1,37 @@
+<div class="container row">
+    <nb-tabset class="w-100" (changeTab)="reset()" fullWidth>
+        <nb-tab tabTitle="Lobs">
+            <div class="container row">
+                <select class="selectLob col-md" [(ngModel)]="filterSelected.lob" multiple ngDefaultControl
+                    (ngModelChange)="sendFilter(1)">
+                    <option [value]="x" *ngFor="let x of filterList[indexFilter].lobs">{{x}}</option>
+                </select>
+
+                <select *ngIf="filterSelected.lob.length !== 0" class="selectLob col-md"
+                    [(ngModel)]="filterSelected.subLob" multiple ngDefaultControl (ngModelChange)="sendFilter(2)">
+                    <option [value]="x" *ngFor="let x of filterList[indexFilter].subLob">{{x}}</option>
+                </select>
+
+                <select *ngIf="filterSelected.subLob.length !== 0" class="selectLob col-md"
+                    [(ngModel)]="filterSelected.skill" multiple ngDefaultControl (ngModelChange)="sendFilter(3)">
+                    <option [value]="x" *ngFor="let x of filterList[indexFilter].skill">{{x}}</option>
+                </select>
+            </div>
+        </nb-tab>
+        <nb-tab tabTitle="Supervisor">
+            <div style="display: grid;">
+                <p>Select supervisor:</p>
+                <nb-select [(ngModel)]="supervisorToSend" id="sup" placeholder="Supervisor" ngDefaultControl
+                    (ngModelChange)="validateSupervisorSelected()">
+                    <nb-option [value]="x" *ngFor="let x of listSupervisor">{{x.NameSupervisor}}</nb-option>
+                </nb-select>
+            </div>
+        </nb-tab>
+        <nb-tab tabTitle="Nesting">
+            <div class="d-flex">
+            <nb-checkbox [value]="nestingCheckbox" (checkedChange)="nestingCheked($event)">
+            </nb-checkbox> <p class="check ml-2">Agents Nesting</p>
+        </div>
+        </nb-tab>
+    </nb-tabset>
+</div>

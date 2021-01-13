@@ -1,0 +1,28 @@
+.cotainerHeader{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.container{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 0px;
+}
+.iconSize{
+  font-size: 1.46rem !important;
+}
+@media (max-width: 510px) {
+  .responseButton{
+    position: fixed;
+    right: 2%;
+    top: 2%;
+  }
+  .reponseTable{
+    position: absolute;
+    /* margin-top: 70px; */
+  }
+}
+
+

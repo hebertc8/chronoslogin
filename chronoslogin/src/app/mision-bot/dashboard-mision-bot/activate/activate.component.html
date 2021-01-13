@@ -1,0 +1,23 @@
+<nb-card size="small">
+  <nb-card-body>
+    <div class="container">
+      <h3>Activate configuration</h3>
+      <nb-select placeholder="Configurations" class="items">
+        <nb-option *ngFor="let item of data" [value]="item.id">{{
+          item.config
+        }}</nb-option>
+      </nb-select>
+      <input
+        nbInput
+        placeholder="Activation range"
+        [nbDatepicker]="formpicker" class="items"
+      />
+      <nb-rangepicker #formpicker></nb-rangepicker>
+
+      <div class="cotainerButtons">
+        <button nbButton (click)="cancel()" status="danger">Cancel</button>
+        <button nbButton (click)="active()" status="success">Active</button>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

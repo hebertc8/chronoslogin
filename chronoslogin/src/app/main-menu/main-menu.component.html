@@ -1,0 +1,56 @@
+<nb-layout>
+
+  <nb-layout-header fixed class="header">
+
+    <div class="d-flex justify-content-between headerContent">
+
+      <div class="d-flex justify-content-start">
+        <img src="./assets/centrales/{{userInfoHeader.Central}}.svg" alt="{{userInfoHeader.Central}}" *ngIf="router.url.indexOf('/dashboard') > 0" class="LogoCentral">
+        <div class="contentIconLeft">
+          <nb-icon class="iconMenu" icon="arrowhead-right-outline" pack="eva" (click)="menuAppear()"></nb-icon>
+          <!-- <ng-container [ngSwitch]="showMenuHeader"> -->
+            <app-header-menu  #menu></app-header-menu>
+
+            <nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
+              <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
+            </nb-select>
+          <!-- </ng-container> -->
+        </div> <!-- <img src="./assets/logos/logo.svg" alt="Logo" class="logoHeader">-->
+      </div>
+      <div class="d-flex justify-content-end">
+<div></div>
+<div class="contentIconRight">
+  <nb-user [name]="userInfoHeader.NameUser"
+             [title]="userInfoHeader.ccmsuser"
+             [picture]="userInfoHeader.Picture"
+             [nbContextMenu]="viewProfileMenu"
+             nbContextMenuTag="menu-action">
+    </nb-user>
+</div>
+      </div>
+    </div>
+
+  </nb-layout-header>
+
+  <nb-layout-column [class]="router.url === '/main/dashboard' ? 'ToDashboard' : (router.url.includes('tpAlert') ? 'tpAlert' : 'normal')">
+
+    <router-outlet class="main {{class}}"></router-outlet>
+
+  </nb-layout-column>
+
+  <nb-layout-footer fixed class="footer">
+    <!-- <button nbButton (click)="change()">FFFFFFFFFF</button>
+      <div [@openClose]="x ? 'open' : 'closed'" class="d-flex justify-content-between divFooter"><h5 class="textFooter">Chronos V3 ©</h5> <img src="./assets/logos/logovertical.svg" alt="Logo" class="logoFooter"></div> -->
+    <div class="row divFooter justify-content-between">
+      <h5 class="textFooter col-md-1">Chronos©</h5>
+      <ng-container [ngSwitch]="router.url.indexOf('/dashboard') > 0 ? 'dashboard' : 'normal'">
+        <nb-icon *ngIf="router.url.indexOf('/dashboard') > 0" icon="{{classCentral === 'Open' ? 'arrow-alt-circle-down' : 'arrow-alt-circle-up'}}" pack="fa" class="openCentral{{classCentral}}" (click)="openCentral()"></nb-icon>
+      <app-central *ngSwitchCase="'dashboard'" class="central{{classCentral}} col-md-10" (openClose)="openCentral()"></app-central>
+    </ng-container>
+      <div class="col-md-1"><img class="logo" alt="logoChronos" src="./assets/logos/logo.svg"></div>
+    </div>
+    <!-- <div><div class="second"></div><img src="./assets/logos/logovertical.svg" alt="Logo" class="logoFooter"></div></div> -->
+  </nb-layout-footer>
+
+
+</nb-layout>

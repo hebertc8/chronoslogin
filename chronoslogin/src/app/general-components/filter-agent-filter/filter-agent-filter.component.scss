@@ -1,0 +1,30 @@
+.textarea0 {
+    border: 2px dashed #0070f6;
+    border-radius: 4px;
+    outline: none;
+    @extend .textarea;
+}
+
+.textarea1 {
+    border: 2px dashed red !important;
+    border-radius: 4px;
+    outline: none;
+    @extend .textarea;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.textarea {
+    width: 100%;
+}
+
+.split {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.description {
+    text-align: center;
+}

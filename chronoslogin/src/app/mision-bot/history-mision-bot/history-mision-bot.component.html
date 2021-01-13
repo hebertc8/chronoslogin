@@ -1,0 +1,46 @@
+<nb-card size="small">
+  <nb-card-body
+    ><div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <label class="mr-1 mb-1">Load</label>
+          <nb-select size="small"
+            class="mr-1 mb-1"
+            placeholder="Select history"
+            [(ngModel)]="selectId"
+          >
+            <nb-option *ngFor="let item of history" [value]="item.id">{{
+              item.name
+            }}</nb-option>
+          </nb-select>
+          <button size="small"
+            class="mr-1 mb-1"
+            nbButton
+            (click)="loadHis()"
+            status="success"
+          >
+            <nb-icon
+              style="font-size: 16px;"
+              icon="spinner"
+              pack="fa"
+            ></nb-icon>
+          </button>
+        </div>
+        <div class="col-sm-12">
+          <div *ngIf="!hide">
+            <div
+              class="d-flex"
+              style="justify-content: flex-start; flex-wrap: wrap;"
+              *ngFor="let item of dataHisto"
+            >
+              <label class="text">{{ item.time | date: "yyyy-mm-dd" }}</label>
+              <label class="text">{{ item.time | date: "HH:mm:ss" }}</label>
+              <label class="text">{{ item.action }}</label>
+              <label class="text">a {{ item.skill }}.</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,28 @@
+@import '../../../common.scss';
+
+.form {
+    display: grid;
+}
+
+.button {
+    margin: 0px 4px 0px 4px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.buttonSection {
+    margin-top: 7px;
+}
+
+.badgeClose {
+    cursor: pointer;
+    margin: 7px;
+}
+.card {
+    @extend .cardCommon;
+    display: inline-block;
+    height: auto;
+    animation-duration: .2s;
+}

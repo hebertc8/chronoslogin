@@ -1,0 +1,165 @@
+<div *ngIf="isDesktop">
+  <div class="">
+    <div class="headerMap bg-white">
+      <div id="titleSection">MAP MANAGER</div>
+      <div class="contentRel m-2">
+        <div class="contentRow">
+          <div class="central col-2 col-md-2" *ngFor="let x of central">
+            <img
+              class="img-central"
+              src="./assets/centrales/{{ x.nombre }}.svg"
+              (click)="selectCentral(x.nombre)" alt="logoCentral"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="viewSites">
+      <div class="d-flex justify-content-start">
+        <div *ngIf="this.centralSelected != null">
+          <div class="mt-3">
+            <div>
+              <div *ngFor="let x of dataMock">
+                <div *ngIf="x.nameCenter == this.centralSelected">
+                  <div *ngFor="let y of x.Sites">
+                    <div>
+                      <button
+                        class="buttonText"
+                        nbButton
+                        (click)="selectSite(y.name)"
+                      >
+                        {{ y.name }}
+                      </button>
+                    </div>
+                    <div
+                      style="padding: 0px !important;"
+                      *ngIf="y.name == this.siteSelected"
+                    >
+                      <div *ngFor="let z of y.zones">
+                        <button
+                          class="buttonText"
+                          nbButton
+                          (click)="loadMap(y.name, z.name, z.map)"
+                        >
+                          {{ z.name }}
+                        </button>
+                      </div>
+                      <div *ngIf="!hideAddZone">
+                        <button
+                          class="buttonText"
+                          nbButton
+                          status="success"
+                          (click)="hideZone(true)"
+                        >
+                          New zone +
+                        </button>
+                      </div>
+                      <div *ngIf="hideAddZone" class="d-flex flex-row">
+                        <button
+                          class="buttonX"
+                          nbButton
+                          status="danger"
+                          (click)="hideZone(false)"
+                        >
+                          X
+                        </button>
+                        <input
+                          type="text"
+                          nbInput
+                          class="inputText"
+                          fieldSize="small"
+                          placeholder="Input"
+                          [(ngModel)]="textZone"
+                        /><button
+                          class="buttonAdd"
+                          nbButton
+                          status="success"
+                          (click)="addZone()"
+                        >
+                          <nb-icon
+                            class="iconSize"
+                            icon="save"
+                            pack="fa"
+                          ></nb-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="!hideAddSite" class="mt-4">
+                <button
+                  nbButton
+                  status="success"
+                  class="buttonText"
+                  (click)="hideSite(true)"
+                >
+                  New site +
+                </button>
+              </div>
+              <div *ngIf="hideAddSite" class="mt-4 d-flex flex-row">
+                <button
+                  nbButton
+                  class="buttonX"
+                  status="danger"
+                  (click)="hideSite(false)"
+                >
+                  X
+                </button>
+                <input
+                  type="text"
+                  nbInput
+                  class="inputText"
+                  fieldSize="small"
+                  placeholder="Input"
+                  [(ngModel)]="textSite"
+                /><button
+                  class="buttonAdd"
+                  nbButton
+                  status="success"
+                  (click)="addSite()"
+                >
+                  <nb-icon class="iconSize" icon="save" pack="fa"></nb-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="hideMap">
+    <div class="viewMap">
+      <div class="positionBox">
+        <p class="textInfoP">Positions</p>
+        <p class="textInfoN">{{ loadMapData.length }}</p>
+      </div>
+      <input
+        class="nameSite"
+        [(ngModel)]="siteSelected"
+        nbInput
+        placeholder="sitie"
+      />
+      <input
+        class="nameSite"
+        [(ngModel)]="zoneSelected"
+        nbInput
+        placeholder="zone"
+      />
+      <button nbButton status="primary" (click)="saveMap()">Save Map</button>
+    </div>
+
+    <app-map [dataGrid]="loadMapData" (mapGrid)="(loadMapData)"></app-map>
+  </div>
+</div>
+
+<div *ngIf="!isDesktop">
+  <nb-card accent="info">
+    <nb-card-body>
+      <div class="boxMobile">
+        <p>This module is only available for desktops</p>
+        <nb-icon class="iconSize" icon="desktop" pack="fa"></nb-icon>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</div>

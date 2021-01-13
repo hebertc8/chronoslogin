@@ -1,0 +1,14 @@
+<nb-select placeholder="Indicator" shape="round" size="tiny" class="selectIndicator"
+    [(ngModel)]="filterSelected.indicator">
+    <nb-option *ngFor="let kpi of kpisSelect" [value]="kpi.indicator">{{kpi.name}}</nb-option>
+</nb-select>
+
+<div class="container row">
+<select class="selectLob col-md" *ngIf="filterSelected.indicator" multiple [(ngModel)]="filterSelected.lobkpiInd" ngDefaultControl (ngModelChange)="validateSelect(true)">
+    <option [value]="x" *ngFor="let x of lobs">{{x}}</option>
+</select>
+
+<select class="selectLob col-md" *ngIf="filterSelected.lobkpiInd" multiple [(ngModel)]="filterSelected.skillKpiInd" ngDefaultControl (ngModelChange)="validateSelect(false)">
+    <option [value]="x" *ngFor="let x of skills">{{x}}</option>
+</select>
+</div>

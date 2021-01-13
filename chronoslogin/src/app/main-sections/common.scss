@@ -1,0 +1,26 @@
+.cardCommon {
+    display: flex;
+    height: 100%;
+    margin: auto;
+    transition: box-shadow 0.5s;
+    animation: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+.headerCommon {
+    padding: 0px 0.5rem;
+    font-size: 0.8rem;
+}
+
+.animation {
+    animation: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+
+@keyframes appear {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,35 @@
+<div class="container" #myBounds [nbSpinner]="loading" nbSpinnerStatus="primary">
+
+    <nb-card class="infoAgent" [ngStyle]="{'margin-left': this.marginInfoAgent.marginleft + 'px'}">
+        <nb-card-header>
+            <nb-badge text="X" status="primary" position="top right" class="badgeClose" (click)="closeInfo()">
+            </nb-badge>
+            <nb-user [name]="infoAgent.nombre" title="{{infoAgent.Status}} | {{infoAgent.Aux}} | {{convertTime(infoAgent.TimeState) }}"
+                nbContextMenuTag="menu-action">
+            </nb-user>
+        </nb-card-header>
+    </nb-card>
+
+
+
+    <div *ngFor="let p of puestos" class="divEstado">
+        <nb-actions size="small" class="titles">
+            <nb-action [icon]="iconos[p.agentes[0].iconoestado]" [badgeText]="p.agentes.length" badgeStatus="info"></nb-action>
+            <nb-action >{{p.lobName}}</nb-action>
+        </nb-actions>
+        <!-- <div class="d-flex justify-content-center titles">
+            <nb-icon class="icon" [icon]="iconos[p.agentes[0].iconoestado].icon"
+                [pack]="iconos[p.agentes[0].iconoestado].pack"></nb-icon>
+            <h6 class="title"></h6>
+            <h6 class="title"></h6>
+        </div> -->
+        <div class="containerAgents">
+            <div class="puestoReferencia" *ngFor="let a of p.agentes"
+                [ngStyle]="{'background-color': functions.validateColor(a.Status, a.colorestado, a.coloraux, a.hastaaux, a.hastaestado,a.TimeState, a.Aux) }"
+                (click)="showInfo(a)">
+                <p class="textAux">{{convertTime(a.TimeState)}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

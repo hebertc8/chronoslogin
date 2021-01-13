@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 255.12 85.04"
+   version="1.1"
+   sodipodi:docname="Netflix.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata35">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Artboard 3 copy 40</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview33"
+     showgrid="false"
+     inkscape:zoom="0.90509668"
+     inkscape:cx="207.8752"
+     inkscape:cy="18.428437"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1-7" />
+  <defs
+     id="defs12">
+    <style
+       id="style10">.cls-1{fill:#2b5097;fill-rule:evenodd;}</style>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3453">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3455"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3457">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3459"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3461">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3463"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3465">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3467"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3469">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3471"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3473">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3475"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3477">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3479"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       id="SVGID_6_-3">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use33-6"
+         overflow="visible"
+         xlink:href="#SVGID_5_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3483">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3485"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2-4">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7-4"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3626">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3628"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3630">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3632"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3634">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3636"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3638">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3640"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3642">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3644"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3646">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3648"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3650">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3652"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2-8">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7-7"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3790">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3792"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3794">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3796"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3798">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3800"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3802">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3804"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3806">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3808"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3810">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3812"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3814">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3816"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3818">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3820"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       id="SVGID_6_-3-4">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use33-6-5"
+         overflow="visible"
+         xlink:href="#SVGID_5_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2-8-1">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7-7-4"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       id="SVGID_6_-3-4-6">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use33-6-5-6"
+         overflow="visible"
+         xlink:href="#SVGID_5_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="SVGID_24_-2-8-3">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use91-7-7-0"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3951">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3953"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3955">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3957"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3959">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3961"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3963">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3965"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3967">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3969"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3971">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3973"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <clipPath
+       clip-path="url(#SVGID_23_)"
+       id="clipPath3975">
+      <use
+         height="100%"
+         width="100%"
+         y="0"
+         x="0"
+         style="overflow:visible"
+         id="use3977"
+         overflow="visible"
+         xlink:href="#SVGID_15_" />
+    </clipPath>
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_1_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_3_" />
+    <rect
+       height="146.554"
+       width="144.311"
+       y="0.72299999"
+       x="0.47600001"
+       id="SVGID_5_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_7_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_8_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_9_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_10_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_11_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_12_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_13_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_14_" />
+    <rect
+       height="500"
+       width="800"
+       y="-176"
+       x="-130.438"
+       id="SVGID_15_" />
+    <clipPath
+       id="_clipPath_f0UbNDBXQ8aHAFPmOgnXs5adxYD8xIe2">
+      <rect
+         id="rect252"
+         height="30"
+         width="121" />
+    </clipPath>
+  </defs>
+  <title
+     id="title14">Artboard 3 copy 40</title>
+  <style
+     id="style401"
+     type="text/css">
+	.st0{stroke:#000000;stroke-width:0.7024;stroke-miterlimit:10;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_3_);}
+</style>
+  <g
+     id="g524"
+     transform="matrix(0.32763442,0,0,0.33108194,-3.3589898,-13.966892)">
+    <g
+       id="Layer_1-7">
+      <g
+         id="g431" />
+      <path
+         id="path143"
+         d="m 228.71351,234.52953 c -9.02043,1.51604 -18.19955,1.97059 -27.69489,3.18116 l -28.96211,-81.18591 v 84.67031 c -9.02044,0.90849 -17.24973,2.1202 -25.79583,3.33192 V 89.424318 h 24.05603 L 203.2339,177.42823 V 89.424318 h 25.47961 z m 49.85186,-88.30488 c 9.81273,0 24.84715,-0.45454 33.86756,-0.45454 v 24.23428 c -11.23688,0 -24.37163,0 -33.86756,0.45453 v 36.04988 c 14.8769,-0.90851 29.75321,-2.12134 44.78706,-2.57586 v 23.32465 l -70.10913,5.3025 V 89.424318 h 70.10913 V 113.65915 H 278.56537 Z M 417.5165,113.65971 h -26.27075 v 111.4799 c -8.54611,0 -17.0922,0 -25.32035,0.30208 V 113.65971 H 339.65467 V 89.424318 h 77.863 z m 41.14701,30.89926 h 34.6593 v 24.23427 h -34.6593 v 54.98332 H 433.8152 V 89.424318 h 70.7439 v 24.234832 h -45.89559 z m 87.04262,58.01149 c 14.402,0.30209 28.96095,1.36415 43.04673,2.1202 v 23.93219 c -22.63072,-1.36415 -45.26202,-2.72552 -68.36761,-3.18116 V 89.424318 h 25.32088 z m 64.4114,27.71864 c 8.07118,0.4551 16.61729,0.90962 24.84659,1.81701 V 89.424318 H 610.11753 Z M 745.90474,89.424318 713.7775,163.1892 l 32.12724,81.33781 c -9.49651,-1.21172 -18.99186,-2.87795 -28.4878,-4.39289 l -18.19896,-44.83339 -18.51459,41.19939 c -9.1809,-1.51605 -18.04322,-1.97059 -27.22058,-3.1823 l 32.60097,-71.03824 -29.43703,-72.855262 h 27.21941 l 16.61729,40.744852 17.7258,-40.744852 z"
+         inkscape:connector-curvature="0"
+         style="fill:#d81f26;stroke-width:0.57288706" />
+    </g>
+    <g
+       id="Layer_2" />
+  </g>
+  <style
+     id="style107">.st0{fill:#b1060f;stroke:#000}.st1{fill:url(#path5719_1_)}.st2{fill:#e50914}</style>
+</svg>

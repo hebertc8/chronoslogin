@@ -1,0 +1,33 @@
+<nb-flip-card class="flipCard" [showToggleButton]="false" [flipped]="flipped" [nbSpinner]="load">
+  <nb-card-front [ngSwitch]="show" #test>
+<nb-card class="card" accent="primary" *ngSwitchCase="false">
+    <nb-card-header class="headerFactory">
+      <div class="d-flex justify-content-between"> <div class="d-flex justify-content-between"> <nb-icon [icon]="icon.icon" [pack]="icon.pack"></nb-icon> {{': ' + titleFilter}}</div> <nb-icon icon="chevron-left-outline" pack="eva" class="flipButton" (click)="flip()"></nb-icon></div>
+    </nb-card-header>
+    <nb-card-body class="bodyFront">
+      <div [ngSwitch]="showComponent">
+        <app-loading *ngSwitchCase="false"></app-loading>
+      </div>
+        <ng-template #Component></ng-template>
+    </nb-card-body>
+</nb-card>
+<nb-card  class="card" *ngSwitchDefault [nbSpinner]="true" nbSpinnerStatus="primary">
+
+</nb-card>
+
+</nb-card-front>
+
+  <nb-card-back  [ngSwitch]="show">
+    <nb-card class="card" status="primary" *ngSwitchCase="true">
+      <nb-card-header class="headerFactory">
+       <div class="d-flex justify-content-between"> <div class="d-flex justify-content-start"><nb-icon class="iconDelete" icon="trash-alt" pack="fa" (click)="remove()"></nb-icon> Config {{  nameComponent}}</div> <nb-icon icon="chevron-left-outline" pack="eva" class="flipButton" (click)="flip()"></nb-icon></div>
+      </nb-card-header>
+      <nb-card-body>
+        <h6>Comming Soon!</h6>
+      </nb-card-body>
+    </nb-card>
+    <nb-card  class="card" *ngSwitchDefault [nbSpinner]="true" nbSpinnerStatus="primary">
+
+    </nb-card>
+  </nb-card-back>
+</nb-flip-card>

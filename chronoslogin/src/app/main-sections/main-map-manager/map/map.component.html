@@ -1,0 +1,54 @@
+<div class="viewUpdate" *ngIf="hiddenUpdate">
+  <button id="close" (click)="close()" nbButton status="danger">X</button>
+  <div>
+    <p>Extension :</p>
+    <input [(ngModel)]="extension" nbInput />
+  </div>
+  <div>
+    <p>Position :</p>
+    <input [(ngModel)]="position" nbInput />
+  </div>
+  <div>
+    <p>Status :</p>
+    <input [(ngModel)]="status" nbInput />
+  </div>
+  <button id="save" (click)="updateInfo()" nbButton status="success">
+    save
+  </button>
+</div>
+  <div id="viewPort">
+    <gridster id="mapaEditor" [options]="options" cdkDrag>
+      <gridster-item
+        class="puesto"
+        [item]="item.maps"
+        *ngFor="let item of dataGrid"
+      >
+        <div *ngIf="!(item.posts.ext < 1)">
+          <nb-icon class="checkButton" icon="check" pack="fa"></nb-icon>
+        </div>
+        <div *ngIf="item.posts.ext < 1">
+          <nb-icon class="questButton" icon="question" pack="fa"></nb-icon>
+        </div>
+        <div id="boxInfo">
+          <div class="d-flex justify-content-between">
+            <button
+              class="buttonHover"
+              nbButton
+              (click)="removeItem($event, item.maps)"
+            >
+              <nb-icon icon="trash" pack="fa"></nb-icon>
+            </button>
+            <button class="buttonHover" nbButton>
+              <nb-icon
+                icon="pencil-alt"
+                pack="fa"
+                (click)="viewInfo(item.maps)"
+              ></nb-icon>
+            </button>
+          </div>
+          <p id="textExt">Ext:</p>
+          <p id="extension">{{ item.posts.ext }}</p>
+        </div>
+      </gridster-item>
+    </gridster>
+</div>

@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row row-cols-4">
+    <div class="col col-6 col-sm-3">
+      <div class="imagenUsuario"></div>
+    </div>
+    <div class="col col-6 col-sm-3">
+      <h1 class="nameText">Jorge Andres Poveda Carvajal</h1>
+      <div class="textBox">
+        <h3 class="infoText">Position:</h3>
+        <h3 class="infoText">Developer II</h3>
+        <h3 class="infoText">3746293</h3>
+      </div>
+    </div>
+    <div class="col col-6 col-sm-3 sm-p">
+      <div class="imagenManager "></div>
+    </div>
+    <div class="col col-6 col-sm-3 sm-p">
+      <div class="textManagerBox ">
+        <h3 class="infoMangerText">Manager</h3>
+        <h3 class="infoMangerText">Gustavo Murcia Hernandez</h3>
+        <h3 class="infoMangerText">964941</h3>
+      </div>
+    </div>
+  </div>
+  <button
+    nbButton
+    status="primary"
+    (click)="centralManager()"
+    class="managerButton"
+  >
+    Manage centrals
+  </button>
+  <app-client-central></app-client-central>
+</div>

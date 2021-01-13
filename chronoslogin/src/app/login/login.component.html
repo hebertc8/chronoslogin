@@ -1,0 +1,48 @@
+<nb-layout>
+
+    <nb-layout-column class="layoutColumn">
+
+        <nb-card class="login">
+            <nb-card-body >
+                <form aria-labelledby="title" [formGroup]="form" (ngSubmit)="login()" class="Form align-middle">
+
+                    <div class="form-group">
+                        <img src="./assets/logos/logo.svg" alt="Logo" class="logoForm">
+                    </div>
+                    <div class="form-group">
+                        <p class="textForm">Log in with your CCMS credentials</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user" class="label">User</label>
+                        <input type="text" nbInput style="width: 100%; max-width: 100%;"
+                            class="input-full-width size-large shape-semi-round ng-pristine" formControlName="user"
+                            id="user" placeholder="User" autofocus fullWidth></div>
+                    <div class="form-group">
+                        <label for="password" class="label">Password</label>
+                        <nb-icon icon="{{showPassword ? 'eye-outline' : 'eye-off-2-outline'}}" pack="eva"
+                            class="iconShowPassword" (click)="showPassword = !showPassword">
+                        </nb-icon>
+                        <input type="{{showPassword ? 'text' : 'password'}}" nbInput
+                            style="width: 100%; max-width: 100%;"
+                            class="input-full-width size-large shape-semi-round ng-pristine" formControlName="password"
+                            id="password" placeholder="Password" fullWidth (enter)="login()">
+                    </div>
+
+                    <div class="form-group">
+                        <button class="buttonSubmit" [nbSpinner]="load" nbSpinnerStatus="info" nbButton fullWidth status="primary" type="submit"
+                            [disabled]="form.invalid">Login</button>
+                    </div>
+                </form>
+
+                <!-- <section class="another-action register" aria-label="Register">
+                    Don't have an account? <a class="text-link" routerLink="../register">Register</a>
+                </section> -->
+            </nb-card-body>
+        </nb-card>
+
+
+    </nb-layout-column>
+
+
+</nb-layout>

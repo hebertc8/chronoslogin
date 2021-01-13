@@ -1,0 +1,182 @@
+/////HEADER////////////////
+.headerContent {
+  width: 100%;
+}
+
+:host ::ng-deep .header nav {
+  padding: 4px;
+  height: 50px;
+}
+
+.logoHeader {
+  height: 30px;
+}
+
+.contentIconLeft {
+  display: flex;
+  align-items: center;
+  margin: 0px 1rem;
+}
+
+.contentIconRight {
+  display: flex;
+  align-items: center;
+}
+
+.iconMenu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.iconUser {
+  font-size: 1.5rem;
+  margin: 0px 1rem;
+}
+
+.LogoCentral {
+  height: 40px;
+}
+
+//////////HEADER//////////////
+
+////FOOTER/////////
+:host ::ng-deep .footer nav {
+  padding: 0.2rem 0 0.2rem 0 !important; // 8px 20px !important;
+  background-color: #a5bfde !important;
+  bottom: 0px;
+  width: 100%;
+  position: relative;
+  // z-index: 9999999;
+}
+
+.logoFooter {
+  height: 40px;
+}
+
+.textFooter {
+  margin: 0px;
+  color: white;
+  font-size: 1rem;
+}
+
+.divFooter {
+  width: 100%;
+}
+
+.central {
+  width: 100%;
+  height: 2rem;
+  visibility: hidden;
+  transition: margin 0.3s, height 0.3s, visibility 0.3s;
+  // transition-delay: 0.3s;
+}
+
+:host ::ng-deep .centralOpen {
+  @extend .central;
+  visibility: visible;
+  height: 4rem;
+  margin-top: -34px;
+  z-index: 9;
+  .container {
+    padding: 5px 15px;
+    .card {
+      opacity: 1;
+      .bodyCard .contentRel .contentAbs .central {
+        width: 7.6rem;
+        height: 2.6rem;
+      }
+    }
+  }
+}
+
+// .central:hover {
+//   height: 4rem;
+//   margin-top: -34px;
+// }
+
+///animation////
+@keyframes rotation {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(450deg);
+  }
+}
+
+.second {
+  -webkit-animation: rotation 10s infinite;
+  animation: rotation 10s infinite;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  background-color: #2b5097;
+  height: 1px;
+  border-radius: 10px;
+  position: absolute;
+  width: 7px;
+  right: 36.9px;
+  bottom: 30px;
+}
+///animation
+
+////////FOOTER//////////
+
+/////////Content Colum////////////////////////
+.ToDashboard {
+  padding: 0px !important;
+}
+.normal {
+  padding-top: 0px !important;
+}
+
+.logo {
+  height: 2rem;
+  margin: auto;
+  float: right;
+}
+
+.tpAlert {
+  padding: 0 !important;
+  margin-top: -26px !important;
+}
+
+// :host ::ng-deep .main + * {
+//     transition: height .3s, width .3s, top .3s, margin .3s;
+// }
+
+:host ::ng-deep .fullScreen + app-dashboard {
+  position: fixed;
+  animation: zoom;
+  height: calc(100vh - 24px);
+  width: 100%;
+  z-index: 9999999;
+  top: 0px;
+  margin-top: 24px;
+}
+
+@keyframes zoom {
+  from {
+    height: 50vh;
+  }
+  to {
+    height: 100vh;
+  }
+}
+
+/////////Content Colum////////////////////////
+
+.openCentral {
+  position: fixed;
+  cursor: pointer;
+  left: 50%;
+  z-index: 99;
+  background-color: #a5bfde;
+  border-radius: 8px 8px 0px 0px;
+  margin-top: -22px;
+  transition: margin 0.3s;
+}
+
+.openCentralOpen {
+  @extend .openCentral;
+  margin-top: -53px;
+}

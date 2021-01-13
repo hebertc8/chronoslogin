@@ -1,0 +1,112 @@
+<nb-card class="contentExp">
+  <nb-card-header class="cardHeader"
+    >Manager Centals
+    <button nbButton status="danger" (click)="buttonClose()">
+      <nb-icon class="icon-default iconSize" icon="times" pack="fa"></nb-icon>
+    </button>
+  </nb-card-header>
+  <nb-card-body>
+    <nb-stepper #stepper style="padding: 0px;" linear="Enable">
+      <nb-step [stepControl]="selectForm" label="Select staff">
+        <form #selectForm="ngForm">
+          <div>
+            <nb-card class="col-12" size="small">
+              <nb-card-header>
+                Workers
+              </nb-card-header>
+              <nb-list>
+                <nb-list-item *ngFor="let x of listWorker">
+                  <nb-checkbox (checkedChange)="selectWorker(x.CCMS, $event)">{{
+                    x.nombre
+                  }}</nb-checkbox>
+                </nb-list-item>
+              </nb-list>
+            </nb-card>
+          </div>
+          <button
+            nbButton
+            nbStepperNext
+            style="margin-left: 89%;"
+            [disabled]="resCentralWorker.length < 1"
+            status="primary"
+          >
+            next
+          </button>
+        </form>
+      </nb-step>
+      <nb-step [stepControl]="AssociateForm" label="Associate centrals">
+        <form #AssociateForm="ngForm">
+          <div class="row row-cols-3">
+            <nb-card class="col col-md-5 cells cardTable" size="small">
+              <nb-card-header>
+                Central
+              </nb-card-header>
+              <nb-list>
+                <nb-list-item *ngFor="let x of central">
+                  <nb-checkbox
+                    (checkedChange)="selectCentral(x.nombre, $event)"
+                    #checkbox
+                    [checked]="statusCheck"
+                    [disabled]="checkDisable"
+                    >{{ x.nombre }}</nb-checkbox
+                  >
+                </nb-list-item>
+              </nb-list>
+            </nb-card>
+            <div class="col col-md-1 cells">
+              <button
+                nbButton
+                nbTooltip="Select all"
+                nbTooltipStatus="primary"
+                status="primary"
+                (click)="selectAll()"
+                class="iconCenter"
+              >
+                <nb-icon
+                  class="icon-default iconSize"
+                  icon="chevron-right"
+                  pack="fa"
+                ></nb-icon>
+              </button>
+              <button
+                nbButton
+                nbTooltip="Clear"
+                nbTooltipStatus="primary"
+                status="primary"
+                (click)="clearAll()"
+                style="margin-top: 5px;"
+                class="iconCenter"
+              >
+                <nb-icon
+                  class="icon-default iconSize"
+                  icon="eraser"
+                  pack="fa"
+                ></nb-icon>
+              </button>
+            </div>
+            <nb-card class="col col-md-5 cells cardTable" size="small">
+              <nb-card-header>
+                Associated
+              </nb-card-header>
+              <nb-list>
+                <nb-list-item *ngFor="let x of centralWorker">
+                  {{ x.nombre }}
+                </nb-list-item>
+              </nb-list>
+            </nb-card>
+          </div>
+          <button nbButton class="buttonLeft" nbStepperPrevious>prev</button>
+          <button
+            nbButton
+            class="buttonRigth"
+            (click)="close()"
+            [disabled]="centralWorker.length < 1"
+            status="primary"
+          >
+            Save
+          </button>
+        </form>
+      </nb-step>
+    </nb-stepper>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,18 @@
+<ng-template [ngIf]="show">
+  <nb-card class="card">
+    <div class="container">
+    <nb-badge text="X" status="info" position="top right" class="badgeClose" (click)="close()"></nb-badge>
+    <h6>Follow Up</h6>
+    <p>{{rowData.nombre}}</p>
+  <form aria-labelledby="title" [formGroup]="form" class="form">
+    <label for="Reason" class="label">Reason</label>
+    <input nbInput id="Reason"  formControlName="Reason">
+    <label for="Obs" class="label">Observations</label>
+    <input nbInput id="Obs" formControlName="Obs">
+    <div class="d-flex justify-content-around buttonSection">
+        <button nbButton status="primary" [nbSpinner]="loadButton" [disabled]="form.invalid" (click)="follow()" >Follow Up!</button>
+    </div>
+</form>
+</div>
+</nb-card>
+</ng-template>

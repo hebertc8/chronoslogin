@@ -1,0 +1,9 @@
+@import '../../common.scss';
+
+.card {
+    @extend .cardCommon;
+}
+
+.bodyCard {
+    padding: 0.5rem 1.5rem;
+}

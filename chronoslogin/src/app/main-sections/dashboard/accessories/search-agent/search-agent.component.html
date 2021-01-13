@@ -1,0 +1,18 @@
+<nb-card class="card">
+    <nb-card-header class="header">Search agents</nb-card-header>
+    <nb-card-body>
+        <div class="container">
+            <input nbInput placeholder="Example: Alex" [(ngModel)]="searchName" (keyup.enter)="search(null)">
+        <div class="buttonsDiv">
+            <button class="buttonConfig" size="small" nbButton (click)="search(true)">
+                <nb-icon icon="search-outline" pack="eva"></nb-icon>
+                <p class="textButton">Search</p>
+            </button>
+            <button class="buttonConfig" size="small" nbButton (click)="search(false)">
+                <nb-icon icon="undo" pack="fa"></nb-icon>
+                <p class="textButton">Undo</p>
+            </button>
+        </div>
+    </div>
+    </nb-card-body>
+</nb-card>

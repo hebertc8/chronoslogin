@@ -1,0 +1,3 @@
+<nb-actions size="tiny">
+    <nb-action *ngFor="let x of menu" [icon]="x.icon" (click)="redirect(x.route)" class="iconMenu"></nb-action>
+</nb-actions>

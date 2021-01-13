@@ -1,0 +1,140 @@
+<div>
+  <nb-card size="large">
+    <nb-card-body>
+      <div class="container">
+        <h3
+          class="items d-flex justify-content-center"
+          *ngIf="context[0].action == 'create'"
+        >
+          Configuration creation
+        </h3>
+        <h3
+          class="items d-flex justify-content-center"
+          *ngIf="context[0].action == 'update'"
+        >
+          Configuration update
+        </h3>
+        <div class="items d-flex alignText">
+          <label>Client name</label>
+          <nb-select placeholder="Client name">
+            <nb-option *ngFor="let item of dataClient" [value]="item.id">{{
+              item.name
+            }}</nb-option>
+          </nb-select>
+        </div>
+        <div class="items d-flex alignText">
+          <label>Configuration name</label>
+          <input type="text" nbInput placeholder="Configuration name" />
+        </div>
+        <div class="items d-flex alignText">
+          <label>Main skill</label>
+          <nb-select placeholder="Main skill">
+            <nb-option *ngFor="let item of dataMainSkill" [value]="item.code">{{
+              item.code
+            }}</nb-option>
+          </nb-select>
+        </div>
+        <div class="items d-flex alignText">
+          <label>Supports skill</label>
+          <nb-select multiple placeholder="Select 2 max">
+            <nb-option
+              *ngFor="let item of dataSupportkill"
+              [value]="item.code"
+              >{{ item.code }}</nb-option
+            >
+          </nb-select>
+        </div>
+        <nb-card accent="info" class="items">
+          <nb-card-header>Evaluation time and schedule </nb-card-header>
+          <nb-card-body>
+            <div class="container">
+              <div class="containerSchedular">
+                <label>Start</label
+                ><input
+                  type="time"
+                  style="margin: 0px 5px;"
+                  nbInput
+                  class="items"
+                />
+              </div>
+              <div class="containerSchedular">
+                <label>Finish</label
+                ><input
+                  type="time"
+                  style="margin: 0px 5px;"
+                  nbInput
+                  class="items"
+                />
+              </div>
+            </div>
+          </nb-card-body>
+        </nb-card>
+        <div style="justify-content: flex-end;" class="items d-flex">
+          <nb-toggle labelPosition="start">Multiskill</nb-toggle>
+        </div>
+        <div class="items">
+          <label>Adviser view</label>
+          <div
+            class="d-flex justify-content-center"
+            *ngIf="adviserFile.length < 1"
+          >
+            <button nbButton status="primary">
+              <label class="upload-button">
+                <input
+                  type="file"
+                  ngFileSelect
+                  (change)="changeListener($event.target.files, true)"
+                />
+                Click to upload
+                <em class="fas fa-file-upload"></em>
+              </label>
+            </button>
+          </div>
+          <div
+            class="d-flex justify-content-center"
+            *ngIf="adviserFile.length == 1"
+          >
+            <div *ngFor="let f of adviserFile; let i = index">
+              <div class="filename">
+                <div class="filename-left">
+                  <em class="fas fa-file"></em>
+                  <span style="margin-left: 2%;"> {{ f.name }}</span>
+                </div>
+                <div class="filename-right">
+                  <button
+                    nbButton
+                    ghost
+                    status="danger"
+                    (click)="removeFile(true)"
+                  >
+                    <em class="fas fa-times"></em>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cotainerButtons">
+          <button nbButton (click)="close()" status="danger">Cancel</button>
+          <button
+            nbButton
+            (click)="save()"
+            status="success"
+            *ngIf="context[0].action == 'create'"
+          >
+            Save
+          </button>
+          <button
+            nbButton
+            (click)="save()"
+            status="success"
+            *ngIf="context[0].action == 'update'"
+          >
+            Update
+          </button>
+        </div>
+      </div>
+    </nb-card-body>
+  </nb-card>
+</div>
+<div *ngIf="context[0].action == 'update'">modo edicion</div>

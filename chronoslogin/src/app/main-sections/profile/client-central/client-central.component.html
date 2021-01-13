@@ -1,0 +1,13 @@
+<div>
+  <div class="col-xl" >
+    <h2 class="subtitulo">My Clients</h2>
+  </div>
+  <div class="contentRel">
+    <div class="row">
+      <div class="central col-10 col-sm-5 col-md-2" *ngFor="let x of central">
+        <img class="img-central" src="./assets/centrales/{{ x.nombre }}.svg" (click)="changeDefaultCentral(x.nombre)" alt="fotoUsuario"/>
+        <nb-icon class="icon-default" icon="star" pack="fa" *ngIf="x.default"></nb-icon>
+      </div>
+    </div>
+  </div>
+</div>

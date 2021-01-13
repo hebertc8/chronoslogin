@@ -1,0 +1,179 @@
+<nb-layout>
+
+    <nb-layout-column class="layoutColumn">
+        <nb-card class="login">
+
+            <!-- <nb-route-tabset [tabs]="tabs"></nb-route-tabset> -->
+
+            <nb-stepper #stepper [linear]="true" disableStepNavigation [selectedIndex]="step">
+                <nb-step label="Verify" [nbSpinner]="load">
+                    <form aria-labelledby="title" [formGroup]="form" (ngSubmit)="verify()" class="Form align-middle">
+
+                        <div class="form-group">
+                            <p class="textForm">Ingresa tu usuario de red</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="user" class="label">Usuario</label>
+                            <input type="text" nbInput style="width: 100%; max-width: 100%;"
+                                [ngClass]="{ 'status-danger': f.user.errors }"
+                                class="input-full-width size-large shape-semi-round ng-pristine" formControlName="user"
+                                id="user" placeholder="usuario.0" autofocus fullWidth>
+                        </div>
+                        <!-- <div class="form-group">
+                        <label for="password" class="label">Password</label>
+                        <nb-icon icon="{{showPassword ? 'eye-outline' : 'eye-off-2-outline'}}" pack="eva"
+                            class="iconShowPassword" (click)="showPassword = !showPassword">
+                        </nb-icon>
+                        <input type="{{showPassword ? 'text' : 'password'}}" nbInput
+                            style="width: 100%; max-width: 100%;" [ngClass]="{ 'status-danger': f.password.errors }"
+                            class="input-full-width size-large shape-semi-round ng-pristine" formControlName="password"
+                            id="password" placeholder="Password" fullWidth (enter)="login()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwordC" class="label">Password Confirmation</label>
+                        <input type="{{showPassword ? 'text' : 'password'}}" nbInput
+                            style="width: 100%; max-width: 100%;" [ngClass]="{ 'status-danger': f.passwordC.errors}"
+                            class="input-full-width size-large shape-semi-round ng-pristine" formControlName="passwordC"
+                            id="passwordC" placeholder="Password Confirmation" fullWidth (enter)="login()">
+                    </div> -->
+
+                        <div class="form-group">
+                            <button class="buttonSubmit" [nbSpinner]="load" nbSpinnerStatus="info" nbButton fullWidth
+                                status="primary" type="submit" [disabled]="form.invalid">Verificar</button>
+                        </div>
+                    </form>
+
+                    <nb-alert outline="warning" class="alerta" *ngIf="message !== ''">
+                        {{message}}
+                    </nb-alert>
+
+                    <nb-alert outline="info" style="position: absolute;bottom: 20px">
+                        ¿Ya tienes acceso?
+                        <button nbButton status="primary" routerLink="/login">Ingresar</button>
+                    </nb-alert>
+
+                </nb-step>
+                <nb-step label="Send Code">
+                    <form aria-labelledby="title" [formGroup]="formEmail"
+                        (ngSubmit)="textButton? verifyCode():sendCode()" class="Form align-middle">
+
+                        <nb-alert outline="warning">
+                            Escribe tu correo corporativo, será usado para autenticarte.
+                        </nb-alert>
+
+                        <div class="form-group">
+                            <label for="email" class="label">Correo electrónico</label>
+                            <input type="email" nbInput style="width: 100%; max-width: 100%;"
+                                [ngClass]="{ 'status-danger': fe.email.errors }"
+                                class="input-full-width size-large shape-semi-round ng-pristine" formControlName="email"
+                                id="email" placeholder="user@company.com" autofocus fullWidth>
+                        </div>
+
+
+                        <nb-alert outline="success" *ngIf="message">
+                            {{this.message}}
+                        </nb-alert>
+
+                        <div class="form-group" *ngIf="message">
+                            <label for="code" class="label">Código</label>
+                            <input type="number" nbInput style="width: 100%; max-width: 100%;"
+                                [ngClass]="{ 'status-danger': fe.code.errors }"
+                                class="input-full-width size-large shape-semi-round ng-pristine withoutArrows"
+                                formControlName="code" id="code" placeholder="101010" autofocus fullWidth>
+                        </div>
+
+                        <nb-progress-bar *ngIf="message" [value]="barValueTime">{{timeRemainingShow}}</nb-progress-bar>
+
+                        <nb-alert outline="warning" *ngIf="resentCodeShow">
+                            ¿No te llegó el código? <a (click)="sendCode()" style="cursor: pointer;">Reenviar</a>
+                        </nb-alert>
+                        <!-- <div class="form-group">
+                        <label for="password" class="label">Password</label>
+                        <nb-icon icon="{{showPassword ? 'eye-outline' : 'eye-off-2-outline'}}" pack="eva"
+                            class="iconShowPassword" (click)="showPassword = !showPassword">
+                        </nb-icon>
+                        <input type="{{showPassword ? 'text' : 'password'}}" nbInput
+                            style="width: 100%; max-width: 100%;" [ngClass]="{ 'status-danger': f.password.errors }"
+                            class="input-full-width size-large shape-semi-round ng-pristine" formControlName="password"
+                            id="password" placeholder="Password" fullWidth (enter)="login()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwordC" class="label">Password Confirmation</label>
+                        <input type="{{showPassword ? 'text' : 'password'}}" nbInput
+                            style="width: 100%; max-width: 100%;" [ngClass]="{ 'status-danger': f.passwordC.errors}"
+                            class="input-full-width size-large shape-semi-round ng-pristine" formControlName="passwordC"
+                            id="passwordC" placeholder="Password Confirmation" fullWidth (enter)="login()">
+                    </div> -->
+
+                        <div class="form-group">
+                            <button class="buttonSubmit" [nbSpinner]="load" nbSpinnerStatus="warning" nbButton fullWidth
+                                status="primary" type="submit" [disabled]="formEmail.invalid">{{textButton? 'Verificar Código':'Enviar código'}}</button>
+                        </div>
+                    </form>
+
+                    <button nbButton size="small" class="mt-3" status="danger" (click)="cancel()">Cancelar</button>
+                </nb-step>
+                <nb-step label="Send pass">
+                    <form aria-labelledby="title" [formGroup]="formPass"
+                    (ngSubmit)="sendPass()" class="Form align-middle">
+
+                    <nb-alert outline="info">
+                       Crea tu contraseña
+                    </nb-alert>
+
+                    <nb-alert outline="warning">
+                        <ul>
+                            <li>Debe tener mínimo 8 caracteres.</li>
+                            <li>Debe contener mayúscula y minúsculas.</li>
+                            <li>Debe tener números.</li>
+                        </ul>
+                     </nb-alert>
+
+                      <div class="form-group">
+                        <label for="password" class="label">Contraseña</label>
+                        <nb-icon icon="{{showPassword ? 'eye-outline' : 'eye-off-2-outline'}}" pack="eva"
+                            class="iconShowPassword" (click)="showPassword = !showPassword">
+                        </nb-icon>
+                        <input type="{{showPassword ? 'text' : 'password'}}" nbInput
+                            style="width: 100%; max-width: 100%;" [ngClass]="{ 'status-danger': fp.password.errors }"
+                            class="input-full-width size-large shape-semi-round ng-pristine" formControlName="password"
+                            id="password" placeholder="Contraseña" fullWidth (enter)="sendPass()">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="passwordC" class="label">Confirmar contraseña</label>
+                        <input type="{{showPassword ? 'text' : 'password'}}" nbInput
+                            style="width: 100%; max-width: 100%;" [ngClass]="{ 'status-danger': fp.passwordC.errors}"
+                            class="input-full-width size-large shape-semi-round ng-pristine" formControlName="passwordC"
+                            id="passwordC" placeholder="Confirmar contraseña" fullWidth (enter)="sendPass()">
+                    </div>
+                    <div class="form-group">
+                        <button class="buttonSubmit" [nbSpinner]="load" nbSpinnerStatus="warning" nbButton fullWidth
+                            status="primary" type="submit" [disabled]="formPass.invalid">Enviar</button>
+                    </div>
+                </form>
+                <button nbButton size="small" class="mt-3" status="danger" (click)="cancel()">Cancelar</button>
+                </nb-step>
+                <nb-step label="Send pass">
+                    Registro con éxito.
+                    <button nbButton routerLink="/login" status="primary">Ingresar</button>
+                </nb-step>
+            </nb-stepper>
+        </nb-card>
+        <!-- <nb-card class="login">
+            <nb-card-body>
+              
+                 <section class="another-action register" aria-label="Register">
+                    Don't have an account? <a class="text-link" routerLink="../register">Register</a>
+                </section>
+            </nb-card-body>
+        </nb-card> -->
+
+
+    </nb-layout-column>
+
+
+</nb-layout>

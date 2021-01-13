@@ -1,0 +1,177 @@
+@import "./../../../common.scss";
+
+$height: 26px;
+$font-size: 0.8rem;
+$marginTop: -24px;
+$backColor: #edf1f7;
+
+.containerTabs {
+    height: $height;
+   // display: flex;
+    position: absolute;
+    animation: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    background-color: $backColor;
+}
+
+// .containerTabs:hover {
+//     .itemTab {
+//         opacity: 0.5;
+//     }
+// }
+
+.containerRel {
+    height: $height;
+    overflow: auto;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    margin-top: $marginTop;
+    background-color: $backColor;
+}
+
+$border: 0.0625rem solid #e4e9f2;
+
+.addDash {
+    display: flow-root !important;
+}
+
+.itemTab {
+    // height: $height;
+    font-size: $font-size;
+    position: relative;
+   // background: #f8f8ff;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 0px 5px 0px 5px;
+    // border-top: $border;
+    border-right: $border;
+    border-left: $border;
+    border-bottom: $border;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-top-style: solid;
+    border-top-width: 0.25rem;
+    opacity: 0.5;
+    transition: font-size 0.3s, opacity 0.3s, left 0.3s;
+    float: left;
+    margin: 0;
+}
+
+.itemTabSelected {
+    border-bottom: none !important;
+    font-size: 1rem;
+   // background-color: white !important;
+    font-weight: bold;
+    opacity: 1 !important;
+
+    .iconClose {
+        font-size: 1rem;
+    }
+}
+
+.iconClose {
+    font-size: $font-size;
+    margin: 0px 0px 0px 4px;
+    transition: font-size 0.3s;
+}
+
+.iconsAddCancel {
+    font-size: 1rem;
+    margin: 0px 4px;
+}
+
+.containerRelationTab {
+    width: 80%;
+}
+
+.itemTabR {
+    font-size: 1rem;
+    position: relative;
+    // background: #f8f8ff;
+   // background-color: white !important;
+    border-top-left-radius: 8px;
+    padding: 0px 10px 0px 10px;
+   // border-top: $border;
+    border-right: $border;
+    border-left: $border;
+    border-bottom: none;
+    // border-bottom: $border;
+    transition: font-size 0.3s;
+    float: right;
+    align-items: center;
+    font-weight: bold;
+    margin: 0;
+    height: 26px;
+}
+
+.options {
+    font-size: 1rem;
+    position: relative;
+    // background: #f8f8ff;
+   // background-color: white !important;
+    border-top-left-radius: 8px;
+    // padding: 0px 10px 0px 10px;
+    // border-top: $border;
+    // border-right: $border;
+    // border-left: $border;
+    // border-bottom: none;
+    // border-bottom: $border;
+    transition: font-size 0.3s;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 24px;
+}
+
+.infoCentral {
+    width: 20%;
+    // display: flex;
+    margin-top: $marginTop;
+    justify-content: flex-end;
+    background-color: $backColor;
+    display: flex;
+}
+
+.fullScreen {
+    cursor: pointer;
+}
+
+.itemRight {
+    float: right;
+    margin: 0;
+}
+
+////////////////////////////// [Add Dashboard]
+
+.add {
+    transition: width .5s;
+}
+.hide {
+    @extend .add;
+    width: 0px;
+    padding: 0px !important;
+    border: 0px;
+}
+
+.show {
+    @extend .add;
+    height: 20px !important;
+    width: 125px !important;
+}
+
+::-webkit-scrollbar {
+    width: 0rem;
+    height: 0rem;
+}
+::-webkit-scrollbar-thumb {
+    background: white !important;
+    cursor: pointer;
+    border-radius: 0rem;
+    border: none; //0rem solid #e4e9f2; // 1px solid #bababa;
+}
+::-webkit-scrollbar-track {
+    background: #eaeef4 !important;
+}

@@ -1,0 +1,28 @@
+<div class="container">
+    <nb-card class="card">
+        <nb-card-body class="bodyCard" #bodyCard>
+            <div class="contentRel">
+                <div class="contentAbs">
+                    <div *ngFor="let x of centrales; let i = index" class="containerImage">
+                    <img class="central" [nbPopover]="dashboards" nbPopoverPlacement="top" nbPopoverTrigger="click"
+                         src="./assets/centrales/{{x.NameCentral}}.svg"
+                        alt="{{x.NameCentral}}" (click)="centralClicked(x.ActiveDashboards, x.NameCentral, x.main)" (dblclick)="mainCentral(x.NameCentral, x.ActiveDashboards)">
+                        <nb-icon icon="star" pack="fa" *ngIf="x.main === 'si'" class="iconStar"></nb-icon>
+                    </div>
+                </div>
+            </div>
+        </nb-card-body>
+    </nb-card>
+</div>
+
+<ng-template #dashboards>
+    <nb-card class="cardDashboard">
+        <nb-card-body>
+            <nb-list>
+                <nb-list-item *ngFor="let d of dash" (click)="updateDashboard(d)" class="dashboardItem" [ngStyle]="{color: d.typeDashboard === 0 ? 'blue' : 'rgb(255, 127, 0)'}">
+                  {{ d.nameDashboard }}
+                </nb-list-item>
+              </nb-list>
+        </nb-card-body>
+    </nb-card>
+</ng-template>

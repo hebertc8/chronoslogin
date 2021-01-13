@@ -1,0 +1,13 @@
+<nb-card>
+    <nb-card-header>
+        Are you sure?
+    </nb-card-header>
+<nb-card-body>
+    {{message}}
+</nb-card-body>
+<nb-card-footer>
+    <div class="d-flex justify-content-around">
+        <button class="button" nbButton status="primary" (click)="close(true)">Accept</button><button class="button" status="basic" nbButton (click)="close(false)">Cancel</button>
+    </div>
+</nb-card-footer>
+</nb-card>

@@ -1,0 +1,49 @@
+@import "./../../common.scss";
+@import "./../../nebular/@theme/styles/themes.scss";
+
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+.selectLob {
+    height: 100%;
+    border: 0.0625rem solid #e4e9f2;
+    border-radius: 4px;
+    animation: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    margin: auto;
+    transition: width 0.3s;
+}
+
+.selectLob option:checked {
+    background-color: red;
+    border-radius: 4px;
+}
+
+@mixin theme-colors($color: #222b45) {
+    @if $color == #222b45 {
+        // background-color: #ffffff !important;
+        // .titleComponentToCreate, .iconClose {
+        color: black !important;
+        // }
+    } @else {
+        // background-color: #222b45 !important;
+        // .titleComponentToCreate, .iconClose {
+        color: white !important;
+        // }
+    }
+}
+
+@include nb-install-component() {
+    .check {
+        @include theme-colors($color: nb-theme(card-background-color));
+
+        // body.dark & {
+        //     @include theme-colors($light-theme: false);
+        // }
+    }
+}

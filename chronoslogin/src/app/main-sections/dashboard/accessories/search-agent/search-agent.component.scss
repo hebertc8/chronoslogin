@@ -1,0 +1,46 @@
+@import "./../../../common.scss";
+
+.card {
+    @extend .cardCommon;
+    width: fit-content;
+    height: auto;
+    border-top: 0;
+}
+
+.buttonConfig {
+    margin-right: 8px;
+    nb-icon {
+        margin: 0 !important;
+    }
+}
+
+.buttonConfig:hover {
+    .textButton {
+        font-size: 12px;
+    }
+    nb-icon {
+        margin-right: 0.5rem !important;
+    }
+}
+
+.textButton {
+    margin: 0;
+    font-size: 0;
+    transition: font-size 0.4s;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+}
+
+.buttonsDiv {
+    justify-content: center;
+    display: flex;
+    margin-top: 6px;
+}
+
+.header {
+    @extend .headerCommon;
+}
+

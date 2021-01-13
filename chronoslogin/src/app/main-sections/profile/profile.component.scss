@@ -1,0 +1,117 @@
+.perfilComponente {
+  overflow-x: hidden !important;
+  width: 85%;
+}
+
+.container {
+  height: 100%;
+  padding: 0px;
+}
+
+.infoText {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.infoMangerText {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.nameText {
+  position: absolute;
+  font-size: 34px;
+  margin-top: 0px;
+  white-space: nowrap;
+}
+
+.imagenManager {
+  height: 80px;
+  width: 80px;
+  background-size: cover !important;
+  border-radius: 45px;
+  border: 1px solid;
+  margin-top: 50%;
+  margin-left: 65%;
+  position: relative;
+  box-shadow: 5px 9px 5px 0 #ccc;
+}
+
+.imagenUsuario {
+  height: 180px;
+  width: 180px;
+  background-size: cover !important;
+  border-radius: 105px;
+  margin: 10px auto;
+  border: 1px solid;
+  position: relative;
+  left: 0px;
+  box-shadow: 5px 9px 5px 0 #ccc;
+  box-shadow: -4px 6px 5px 0 rgba(186, 186, 186, 0.75);
+}
+.textBox{
+  margin-top: 50%;
+}
+.textManagerBox{
+  margin-top: 50%;
+}
+.managerButton{
+  margin-left: 15px; margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .infoMangerText {
+    margin-left: 20px;
+  }
+  .infoText{
+    margin-left: 45px;
+  }
+  .nameText{
+    margin-left: 40px;
+    font-size: 25px;
+  }
+}
+@media (max-width: 576px) {
+  .infoMangerText {
+    display: table;
+    margin-left: -25%;
+  }
+  .infoText{
+    display: table;
+  }
+  .nameText{
+    position: initial;
+    margin-left: -100%;
+    font-size: 16px;
+  }
+  .imagenManager{
+    display: table-cell;
+    margin-top: 10%;
+    margin-left: 85%;
+  }
+  .imagenUsuario{
+    margin-top: 40%;
+    position: initial;
+    left: 50%;
+    top: 40px;
+  }
+  .textBox{
+    margin-top: 30%;
+  }
+  .textManagerBox{
+    display: table-cell;
+    margin-top: 45%;
+  }
+  .managerButton{
+    margin-left: 30%;
+  }
+  .sm-p{
+    margin-top: 8%;
+  }
+}

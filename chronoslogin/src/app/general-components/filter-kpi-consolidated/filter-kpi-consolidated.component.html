@@ -1,0 +1,8 @@
+
+ <nb-radio-group [(ngModel)]="filterSelected" ngDefaultControl (ngModelChange)="filterSelect()" class="d-flex w-100n justify-content-around">
+    <nb-radio
+      *ngFor="let f of filters"
+      [value]="f">
+     <p class="textRadio">{{ f }}</p>
+    </nb-radio>
+  </nb-radio-group>

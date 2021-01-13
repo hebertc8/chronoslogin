@@ -1,0 +1,19 @@
+<nb-card size="medium">
+  <nb-card-body>
+    <div class="container row">
+      <div class="cotainerHeader col-12 col-md-12">
+        <h3>Advisers list</h3>
+        <button nbButton status="danger" class="responseButton" (click)="close()">
+          <nb-icon class="iconSize" icon="times" pack="fa"></nb-icon>
+        </button>
+      </div>
+      <div>
+      <ng2-smart-table
+        class="reponseTable"
+        [settings]="settings"
+        [source]="source"
+      ></ng2-smart-table>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>

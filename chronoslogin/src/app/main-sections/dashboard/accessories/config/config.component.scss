@@ -1,0 +1,33 @@
+@import './../../../common.scss';
+
+.card {
+    @extend .cardCommon;
+    border-top: 0;
+}
+
+.buttonConfig {
+    margin-right: 8px;
+    nb-icon {
+        margin: 0 !important;
+    }
+}
+
+.buttonConfig:hover {
+    .textButton {
+        font-size: 12px;
+    }
+    nb-icon {
+        margin-right: 0.5rem !important;
+    }
+}
+
+.textButton {
+    margin: 0;
+    font-size: 0;
+    transition: font-size .4s;
+}
+
+.header {
+    @extend .headerCommon;
+}
+

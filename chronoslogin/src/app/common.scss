@@ -1,0 +1,26 @@
+.cardCommon {
+    display: flex;
+    height: 100%;
+    margin: auto;
+    transition: box-shadow 0.5s;
+}
+
+.animation {
+    animation: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+
+.gridster {
+    background-color: #EDF1F7;
+    border-radius: 5px;
+}
+.gridsterItem {
+    border-radius: 5px;
+}
+
+@keyframes appear {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}

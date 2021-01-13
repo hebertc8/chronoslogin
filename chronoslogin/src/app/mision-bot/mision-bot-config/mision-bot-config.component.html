@@ -1,0 +1,51 @@
+<div class="row">
+  <div class="col-12 col-md-6">
+    <div style="padding: 10px;">
+      <nb-card accent="info">
+        <nb-card-header
+          ><h3 style="text-align: center;">View</h3></nb-card-header
+        >
+        <nb-card-body>
+          <div class="row d-flex justify-content-center">
+            <div class="col-10 col-md-6 d-flex justify-content-center mb-1">
+              <button status="primary" (click)="advisersView()" nbButton>
+                Advisers list
+              </button>
+            </div>
+            <div class="col-10 col-md-6 d-flex justify-content-center mb-1">
+              <button status="primary" (click)="matrixView()" nbButton>
+                matrix list
+              </button>
+            </div>
+          </div>
+        </nb-card-body>
+      </nb-card>
+      <nb-card accent="success">
+        <nb-card-header
+          ><h3 style="text-align: center;">Actions</h3></nb-card-header
+        >
+        <nb-card-body>
+          <div class="row d-flex justify-content-center">
+            <div class="col-10 d-flex justify-content-center">
+              <button status="success" (click)="createAction()" nbButton>
+                Create
+              </button>
+            </div>
+          </div>
+        </nb-card-body>
+      </nb-card>
+    </div>
+  </div>
+  <div class="col-12 col-md-6">
+    <div style="padding: 10px;">
+      <h2 style="text-align: center;">List configurations</h2>
+      <ng2-smart-table
+        [settings]="settings"
+        [source]="source"
+        (rowSelect)="rowSelect($event)"
+        (delete)="deleteAction($event)"
+        (edit)="editAction($event)"
+      ></ng2-smart-table>
+    </div>
+  </div>
+</div>

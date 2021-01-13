@@ -1,0 +1,7 @@
+<div [ngDraggable]="false" [position]="{x: x * widthPosition, y: y * heightPosition }"
+    [preventDefaultEvent]="true" class="container" #puesto [ngSwitch]="show">
+
+    <div class="puesto" *ngSwitchCase="true" [ngStyle]="{'background-color': backGroundColor}">
+        <small>{{Time}}</small>
+    </div>
+</div>

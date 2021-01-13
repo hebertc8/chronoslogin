@@ -1,0 +1,142 @@
+.contentRow {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-right: -15px;
+}
+
+.contentRel {
+  overflow: auto;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.boxMobile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+#titleSection {
+  padding-top: 1%;
+  position: relative;
+  height: 26px;
+  width: 520px;
+  left: calc(50% - (520px / 2));
+  text-align: center;
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.iconSize {
+  font-size: 20px;
+}
+.central:hover {
+  box-shadow: 3px 5px 3px 0 #ccc;
+}
+
+.central {
+  height: 30px !important;
+  width: 80px;
+  background-color: white;
+  border: 0.0625rem solid #e4e9f2;
+  border-radius: 5px;
+  background-repeat: no-repeat !important;
+  background-position-x: -20px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  display: table;
+  padding: 0;
+  margin: 6px 5px;
+  transition: all 0.9s ease;
+}
+.headerMap {
+  position: fixed;
+  z-index: 30;
+  left: 0px;
+  width: 100%;
+}
+.nameSite {
+  height: 100%;
+  margin: 0px 10px;
+  font-family: Ubuntu, sans-serif;
+  width: 155px;
+}
+
+@media (min-width: 768px) {
+  .col-md-2 {
+    flex: 0 0 5.666667% !important;
+  }
+}
+
+.viewMap {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  height: 43px;
+  background: white;
+  width: 90%;
+  left: 155px;
+  top: 165px;
+  padding: 5px;
+  z-index: 30;
+}
+.textInfoN {
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: -2px 0 0;
+  font-weight: 700;
+}
+.textInfoP {
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.positionBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px 10px;
+}
+.viewSites {
+  position: fixed;
+  height: 100vh;
+  width: 155px;
+  left: 0px;
+  top: 165px;
+  background: white;
+  padding: 5px;
+  overflow: auto;
+  z-index: 30;
+}
+
+.inputText {
+  padding: 3px !important;
+  width: 60px !important;
+  max-width: 4rem;
+}
+.buttonX {
+  padding: 5px 10px !important;
+}
+.buttonAdd {
+  padding: 5px 5px !important;
+}
+
+.buttonText {
+  height: 40px;
+  width: 140px;
+  padding: 8px;
+}
+
+.img-central {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 510px) {
+}

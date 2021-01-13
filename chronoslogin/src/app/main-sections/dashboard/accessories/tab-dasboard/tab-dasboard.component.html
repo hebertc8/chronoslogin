@@ -1,0 +1,43 @@
+<div class="d-flex justify-content-between">
+    <div class="containerRelationTab">
+        <div class="containerRel" #containerRel [nbSpinner]="loadTabs" nbSpinnerMessage="Loading" nbSpinnerStatus="primary">
+            <div class="containerTabs">
+
+                <nb-card *ngFor="let x of dashboards; let i = index"
+                    [ngStyle]="{position:  'relative', 'z-index': indexSelected === i ? 10 : 0}"
+                    class="itemTab {{indexSelected === i ? 'itemTabSelected' : ''}}"
+                    accent="{{x.tipo === 1 ? 'warning' : 'primary'}}">
+                    <div>
+                    <span (dblclick)="selectDashboard($event, x, i)">{{x.NameDashboard}}</span>
+                    <nb-icon *ngIf="x.tipo !== 1 && this.infoCentral.iddash !== x.iddash" class="iconClose"
+                        icon="close-outline" pack="eva" (dblclick)="delete(x.NameDashboard, x.iddash)"></nb-icon>
+                    </div>
+                </nb-card>
+                <nb-card class="itemTab itemTabSelected addDash">
+                    <nb-icon *ngIf="classAdd !== 'hide'" class="iconsAddCancel" icon="times-circle" pack="fa"
+                        (click)="classAdd = 'hide'"></nb-icon>
+                    <input nbInput [class]="classAdd" size="small" maxlength="15" type="text"
+                        [(ngModel)]="nameNewDashboard">
+                    <nb-icon class="iconsAddCancel" icon="plus" pack="fa" (click)="showAdd()"></nb-icon>
+                </nb-card>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="infoCentral">
+        <nb-card class="itemTabR fullScreen">
+            <nb-icon icon="{{screen ? 'compress' : 'expand'}}" pack="fa" (click)="fullScreen()"></nb-icon>
+        </nb-card>
+        <nb-card class="itemTabR">{{infoCentral.Central}}</nb-card>
+        <nb-card class="itemRight">
+            <nb-actions size="small" class="options">
+                <nb-action icon="settings-2-outline" (click)="openSearchConfig('config')"></nb-action>
+                <nb-action icon="search" (click)="openSearchConfig('search')"></nb-action>
+                <nb-action icon="share-outline"></nb-action>
+                <nb-action icon="save" (click)="save()"></nb-action>
+            </nb-actions>
+        </nb-card>
+    </div>
+
+</div>

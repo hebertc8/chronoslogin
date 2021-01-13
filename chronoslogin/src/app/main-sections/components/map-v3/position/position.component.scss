@@ -1,0 +1,19 @@
+.puesto {
+    // position: absolute;
+    width: 2.5rem;
+    height: 1.6rem;
+   // background-color: #20c997;
+    color: white;
+    text-align: center;
+    // line-height: 50px;
+    // border: 1px dashed #067002;
+    border:1px solid #BABABA;
+    border-radius: 5px;
+    animation: appear;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+  }
+
+.container {
+  position: absolute;
+}

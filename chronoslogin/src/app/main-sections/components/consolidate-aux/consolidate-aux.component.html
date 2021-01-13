@@ -1,0 +1,18 @@
+<div class="table-responsive">
+    <table class="table table-bordered mb-0">
+        <caption></caption>
+        <thead>
+            <tr>
+                <th scope="col" id="col1">LOBS</th>
+                <th *ngFor="let title of titles; trackBy: trackById" scope="col" id="col2">
+                    {{title + '(' + count(title) +')' }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let r of row; trackBy: trackById">
+                <td style="text-align: left; padding-left: 5px;">{{r.lob}}</td>
+                <td *ngFor="let aux of r.auxs" [ngStyle]="{'color': aux.cantidad !== 0 ? '#3366FF' : 'black', 'font-weight': aux.cantidad !== 0 ? '800' : '0'}">{{aux.cantidad}}</td>
+              </tr>
+        </tbody>
+    </table>
+</div>

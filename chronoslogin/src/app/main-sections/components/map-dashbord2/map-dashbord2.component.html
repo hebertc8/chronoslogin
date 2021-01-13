@@ -1,0 +1,70 @@
+<div class="containerSection">
+    <button class="minusZoom" (click)="minusZoom()" nbButton status="primary">
+        <nb-icon icon="minus-outline"></nb-icon>
+    </button>
+    <button class="plusZoom" (click)="plusZoom()" nbButton status="primary">
+        <nb-icon icon="plus-outline"></nb-icon>
+    </button>
+    <div class="containerTable" [ngStyle]="ZoomStyles" ngDraggable>
+            <div class="columns">
+                    <div *ngFor="let posicionesy of mapMatrix; let y = index" class="rows">
+                        <div *ngFor="let item of posicionesy; let x = index" class="spaces">
+                            <button id={{item.idAgent}} nbTooltip={{item.idAgent}} nbTooltipStatus="primary" class="buttonSpace" *ngIf="item.active" nbButton status={{item.value}} (click)="searchAgent(item.idAgent)" >
+                                {{item.time}}
+                            </button>
+                        </div>
+                      </div>
+            </div>
+    </div>
+    <div class="viewAgent" *ngIf="pressPosition">
+        <div class="containerAgent">
+        <div class="initialIcons">
+            <div>
+                <nb-icon class="agentIconsView" icon="phone-call-outline"></nb-icon>
+            </div>
+            <div>
+                <nb-icon class="agentIconsView" icon="arrowhead-right-outline"></nb-icon>
+            </div>
+        </div>
+        <div>
+            <p class="nameAgentView">{{agentsArray[0].name}}</p>
+            <p class="nameAnalystView">{{agentsArray[0].nameAnalyst}}</p>
+        </div>
+        <div>
+            <div class="photoAnalystView"></div>
+            <div class="photoAgentView"></div>
+        </div>
+        <div>
+            <p class="nameAnalystView">Estado</p>
+        </div>
+        <div>
+            <p class="timeAgentView">{{agentsArray[0].time}}</p>
+        </div>
+        <div>
+            <div class="rowText">
+                <div class="textAgentView">
+                    Ext
+                </div>
+                <div class="textAgentView">
+                    Login
+                </div>
+            </div>
+            <div class="rowText">
+                <div class="textAgentView">
+                    {{agentsArray[0].ext}}
+                </div>
+                <div class="textAgentView">
+                    {{agentsArray[0].login}}
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="textAgentView">Skills</p>
+        </div>
+        <div>
+            <p class="skillsAgentView">{{agentsArray[0].skills}} </p>
+        </div>
+
+        </div>
+    </div>
+</div>

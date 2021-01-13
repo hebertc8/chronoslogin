@@ -1,0 +1,4 @@
+<ng2-smart-table [settings]="settings" [source]="source" (custom)="onCustom($event)">
+</ng2-smart-table>
+
+<app-follow-up-popover #followAgent cdkDrag class="followUp" (changes)="detectChanges()"></app-follow-up-popover>

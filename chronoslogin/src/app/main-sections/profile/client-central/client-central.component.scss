@@ -1,0 +1,57 @@
+.row {
+  padding-left: 6%;
+  margin: 0px;
+}
+
+.contentAbs {
+  position: absolute;
+  display: flex;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  border-top: 1px solid #bababa;
+  border-bottom: 1px solid #bababa;
+  padding: 10px;
+}
+
+.contentRel {
+  overflow: auto;
+  position: relative;
+  width: auto;
+  height: 300px;
+}
+
+.central:hover {
+  box-shadow: 5px 9px 5px 0 #ccc;
+}
+.central {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border: 0.0625rem solid #e4e9f2;
+  border-radius: 5px;
+  background-repeat: no-repeat !important;
+  background-position-x: -20px !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  display: table;
+  padding: 0;
+  margin: 12px 10px;
+  transition: all 0.9s ease;
+}
+
+.icon-default {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  color: #fea70f;
+  z-index: 1;
+}
+.img-central {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}

@@ -1,0 +1,17 @@
+.grid {
+    height: 80%;
+    display: flex;
+    width: 100%;
+    margin: 0;
+}
+
+.titleMenu {
+    text-align: center;
+    margin: 0px;
+}
+
+.cardTitle {
+    margin:  0px auto 20px auto;
+    border: 0px;
+    background: linear-gradient(to right, rgba(237,241,247,1) 0%, rgba(237,241,247,1) 12%, rgba(255,255,255,1) 36%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 64%, rgba(237,241,247,1) 88%, rgba(237,241,247,1) 100%);
+}

@@ -1,0 +1,17 @@
+<nb-card class="cardR rightClick">
+    <nb-card-header><div class="row d-flex justify-content-between"> <div class="col-md-4"><label class="titleComponentToCreate" >{{componentSelected.nameToShow}}</label></div> <div  class="col-md-3"><button nbButton size="small" status="primary" (click)="sendComponent()" [disabled]="!(enabledCreate)"><nb-icon icon="hammer" pack="fa"></nb-icon>Create</button></div> <div class="col-md-1"><nb-icon class="iconClose" icon="times-circle" pack="fa" (click)="close()"></nb-icon></div></div></nb-card-header>
+    <nb-card-body>
+        <nb-actions size="small">
+            <nb-action *ngFor="let x of listComponent" [icon]="x.icon" (click)="select(x)" [nbTooltip]="x.nameToShow"></nb-action>
+          </nb-actions>
+          <nb-badge text="{{ viewFooter ? '▲' : '▼'}}" status="primary" position="fixed" class="BadgeOpenConfig" *ngIf="(componentSelected.nameToShow !== 'Select Component' && componentSelected.filterComponent)" (click)="openFooter()"></nb-badge>
+    </nb-card-body>
+    <nb-card-footer class="footerConfig" [ngStyle]="{height: (componentSelected.nameToShow !== 'Select Component' && viewFooter && componentSelected.filterComponent? 200 : 0) + 'px' }" [ngSwitch]="viewFooter ? componentSelected.filterComponent : null">
+        <app-config-component *ngSwitchCase="'FilterAgent'" (filter)="setFilter($event)"></app-config-component>
+        <app-filter-kpis *ngSwitchCase="'FilterKpi'" (filter)="setFilter($event)"></app-filter-kpis>
+        <app-filter-kpis-ind *ngSwitchCase="'FilterKpiInd'" (filter)="setFilter($event)"></app-filter-kpis-ind>
+        <app-filter-agent-filter *ngSwitchCase="'FilterAgentFilter'" (filter)="setFilter($event)"></app-filter-agent-filter>
+        <app-filter-kpi-consolidated *ngSwitchCase="'FilterKpiConsolidated'" (filter)="setFilter($event)"></app-filter-kpi-consolidated>
+    </nb-card-footer>
+</nb-card>
+
